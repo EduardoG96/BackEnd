@@ -236,7 +236,8 @@ echo $persona2->nombre;
             $current->left = $newNode;
             return;
             }
-        else{ 
+            $current = $current->left; //Si tengo nada guardado, cambio current para comparar
+        
             $current->right = $newNode;
             if($current->right === null){
                 return;
@@ -245,7 +246,7 @@ echo $persona2->nombre;
             }
         }
         
-    }
+    
     $arbolito = new BinaryTree();
     $arbolito->insert(10);
     $arbolito->insert(7);
