@@ -26,4 +26,9 @@ function bubbleSort($arr){
 }
 print_r(bubbleSort([8,10,5,7,21,1,15]));
 
+
+// Insertion Sort
+
+
+
 ?>
